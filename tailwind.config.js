@@ -7,13 +7,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary_color: '#db915e',
-        secondary_color: '##6e6e6e',
-        light_bg: '#f4f3f0'
+        primary_color: '#00b8ec',
+        secondary_color: '#fcb415',
+        purple_color: '#944b9c'
       },
       fontFamily: {
         rancho: ['Rancho', 'cursive']
       }
+    },
+    animation: {
+      text: 'text 5s ease infinite',
+    },
+    keyframes: {
+      text: {
+        '0%, 100%': {
+          'background-size': '200% 200%',
+          'background-position': 'left center',
+        },
+        '50%': {
+          'background-size': '200% 200%',
+          'background-position': 'right center',
+        },
+      },
     },
   },
   daisyui: {
@@ -21,9 +36,9 @@ export default {
       {
         mytheme: {
 
-          "primary": "#db915e",
+          "primary": "#00b8ec",
 
-          "secondary": "#6e6e6e",
+          "secondary": "#fcb415",
 
           "accent": "#37CDBE",
 
@@ -44,3 +59,4 @@ export default {
   },
   plugins: [require("daisyui")],
 }
+// primary_color: '#db915e'
