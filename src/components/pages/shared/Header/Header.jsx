@@ -63,8 +63,8 @@ const Header = () => {
                         `}>
                         <li className='font-semibold hover:text-primary border-y-2 border-transparent'><ActiveLink to={"/"}>HOME</ActiveLink></li>
                         <li className='font-semibold hover:text-primary border-y-2 border-transparent'><ActiveLink to={'/allToys'}>ALL-TOYS</ActiveLink></li>
-                        <li className='font-semibold hover:text-primary border-y-2 border-transparent'><ActiveLink to={'/myToys'}>MY-TOYS</ActiveLink></li>
-                        <li className='font-semibold hover:text-primary border-y-2border-transparent'><ActiveLink to={'/addAToys'}>ADD-A-TOYS</ActiveLink></li>
+                        {user && <li className='font-semibold hover:text-primary border-y-2 border-transparent'><ActiveLink to={'/myToys'}>MY-TOYS</ActiveLink></li>}
+                        {user && <li className='font-semibold hover:text-primary border-y-2border-transparent'><ActiveLink to={'/addAToys'}>ADD-A-TOYS</ActiveLink></li>}
                         <li className='font-semibold hover:text-primary border-y-2 border-transparent'><ActiveLink to={'/blog'}>BLOG</ActiveLink></li>
                     </ul>
                     <div className='flex justify-end items-center gap-5 lg:w-3/12 font-rancho'>
