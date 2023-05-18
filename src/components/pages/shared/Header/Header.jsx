@@ -26,7 +26,7 @@ const Header = () => {
         };
     }, []);
     return (
-        <header className={`fixed top-0 w-full z-50 transition-[top]  ${scrolled ? 'text-black md:top-0 bg-white' : 'text-black md:top-5 bg-transparent'}`}>
+        <header className={`fixed top-0 w-full z-50 transition-[top] text-secondary ${scrolled ? 'md:top-0 bg-white' : 'md:top-5 bg-transparent'}`}>
             <div className="container">
                 <nav className='flex justify-between items-center py-2'>
                     {
@@ -35,7 +35,7 @@ const Header = () => {
                     <Link to='/' className='lg:w-3/12 mr-auto'>
                         <div className='flex gap-2'>
                             <img className='w-10 h-10' src={logo} alt="" />
-                            <h1 className='text-3xl flex items-center font-rancho'><span className='font-black text-primary'>Edu</span>Fun Emporium</h1>
+                            <h1 className='text-3xl flex items-center font-rancho'><span className='font-black text-primary'>Edu</span><span className='font-black text-yellow_color mr-1'>Fun</span> Emporium</h1>
                         </div>
                     </Link>
                     <ul className={`

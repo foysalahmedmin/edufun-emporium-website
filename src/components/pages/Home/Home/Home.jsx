@@ -1,10 +1,15 @@
 import React from 'react';
+import HomeBanner from '../HomeBanner/HomeBanner';
+import Gallery from '../Gallery/Gallery';
+import Shop from '../Shop/Shop';
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <HomeBanner />
+            <Gallery />
+            <Shop />
+        </>
     );
 };
 
