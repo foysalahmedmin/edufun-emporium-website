@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         primary_color: '#00b8ec',
-        secondary_color: '#fcb415',
-        purple_color: '#944b9c'
+        secondary_color: '#944b9c',
+        yellow_color: '#fcb415'
       },
       fontFamily: {
         rancho: ['Rancho', 'cursive']
@@ -38,7 +38,7 @@ export default {
 
           "primary": "#00b8ec",
 
-          "secondary": "#fcb415",
+          "secondary": "#944b9c",
 
           "accent": "#37CDBE",
 
@@ -50,7 +50,7 @@ export default {
 
           "success": "#36D399",
 
-          "warning": "#FBBD23",
+          "warning": "#fcb415",
 
           "error": "#F87272",
         },
