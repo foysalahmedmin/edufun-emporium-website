@@ -52,7 +52,11 @@ const LogIn = () => {
         <section className='h-screen'>
             <div className="pt-[5rem] container py-10 min-h-screen flex justify-center lg:flex-row gap-5 items-center">
                 <div className='w-full lg:w-1/2 overflow-hidden'>
-                    <h1 className='text-center uppercase text-3xl mb-5 font-black font-rancho text-animation'>Log-In</h1>
+                    <div className='py-5'>
+                        <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>Log-In</h1>
+                        <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
+                        <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
+                    </div>
                     <form onSubmit={logInHandler} className='min-w-3xl' action="">
                         <div>
                             <label htmlFor="email"></label>

@@ -1,60 +1,37 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import All_Toys_Tr from './All_Toys_Tr';
 
 const All_Toys = () => {
     const allToys = useLoaderData()
-    console.log(allToys)
     return (
         <section className='py-20'>
-            <div className="overflow-x-auto w-full">
-                <table className="table w-full">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* row 1 */}
-                        <tr>
-                            <td>
-                                <div className="flex items-center space-x-3">
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-12 h-12">
-                                            <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="font-bold">Hart Hagerty</div>
-                                        <div className="text-sm opacity-50">United States</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                Zemlak, Daniel and Leannon
-                                <br />
-                                <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                            </td>
-                            <td>Purple</td>
-                            <th>
-                                <button className="btn btn-ghost btn-xs">details</button>
-                            </th>
-                        </tr>
-                    </tbody>
-                    {/* foot */}
-                    <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
-                            <th></th>
-                        </tr>
-                    </tfoot>
-
-                </table>
+            <div className="container py-10">
+                <div className='py-5'>
+                    <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>All Toys</h1>
+                    <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
+                    <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
+                </div>
+                <div className="overflow-x-auto pt-5">
+                    <table className="table w-full">
+                        <thead className='bg-none'>
+                            <tr className='font-rancho text-center text-secondary border-b-2 border-primary'>
+                                <th></th>
+                                <th>Seller Name</th>
+                                <th>Toy Name</th>
+                                <th>Sub Category</th>
+                                <th>Price</th>
+                                <th>Stocks</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                allToys.slice(0, 20).map((toy, index) => <All_Toys_Tr key={toy._id} toy={toy} index={index} />)
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     );
