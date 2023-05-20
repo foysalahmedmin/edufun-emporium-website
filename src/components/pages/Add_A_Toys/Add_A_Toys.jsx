@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Add_A_Toys = () => {
     const { user } = useContext(AuthContext)
@@ -28,6 +29,25 @@ const Add_A_Toys = () => {
             description
         }
         console.log(toy)
+        fetch('http://localhost:5000/toys',{
+            method : 'POST',
+            headers: {'Content-Type' : 'application/json'},
+            body: JSON.stringify(toy)
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result)
+            if(result.insertedId){
+                form.reset()
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Successfully Added Your Toy Info',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+        })
     }
     return (
         <section className='min-h-screen'>
