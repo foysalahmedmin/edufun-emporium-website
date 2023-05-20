@@ -46,16 +46,15 @@ const My_Toys = () => {
                 </div>
                 <div>
                     <div className="overflow-x-auto w-full">
-                        <table className="table w-full">
-                            {/* head */}
+                        <table className="w-full">
                             <thead>
-                                <tr className='font-rancho text-secondary border-b-2 border-primary'>
-                                    <th>
+                                <tr className='font-rancho text-left text-secondary border-y-2 border-primary'>
+                                    <th className='sticky left-0 z-10 py-3'>
                                     </th>
-                                    <th>Toy</th>
-                                    <th>Seller</th>
-                                    <th>Description</th>
-                                    <th>Action</th>
+                                    <th className='py-3' >Toy</th>
+                                    <th className='py-3' >Seller</th>
+                                    <th className='py-3' > Description</th>
+                                    <th className='py-3' >Action</th>
                                 </tr>
                             </thead>
                             <tbody>

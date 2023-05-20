@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
+import { Rating } from '@mui/material';
 
 const Toy_Details = () => {
     const navigation = useNavigation()
@@ -18,18 +19,27 @@ const Toy_Details = () => {
                     <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
                     <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
                 </div>
-                <div className="hero min-h-screen bg-base-200">
-                    <div className="hero-content flex-col lg:flex-row-reverse">
-                        <img src={picture_url} className="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
+                <div className="hero min-h-screen">
+                    <div className="w-full flex gap-5 justify-around items-start lg:items-center py-5 lg:p-5 flex-col lg:flex-row-reverse">
+                        <div className='w-full lg:w-1/2 flex-1'>
+                            <img src={picture_url} className="w-full h-[370px] object-cover rounded-lg shadow-2xl " />
+                        </div>
+                        <div className='flex-1 w-full lg:w-1/2'>
                             <h1 className="text-3xl font-bold text-primary uppercase">{name}</h1>
-                            <p className="pt-5"><span className='font-rancho font-bold tracking-[2px]'>Seller:</span> <span>{seller_name}</span></p>
-                            <p className="pb-5"><span>{seller_email}</span></p>
-                            <p className=""><span className='font-rancho font-bold tracking-[2px]'>Price:</span> <span>${price}</span></p>
-                            <p className=""><span className='font-rancho font-bold tracking-[2px]'>Stock:</span> <span>{quantity_available}</span></p>
-                            <p className=""><span className='font-rancho font-bold tracking-[2px]'>Sub-Category:</span> <span>{sub_category}</span></p>
-                            <p className=""><span className='font-rancho font-bold tracking-[2px]'>Rating:</span> <span>{rating}</span></p>
-                            <p className='py-5'>{description}</p>
+                            <p className="text-secondary">{sub_category}</p>
+                            <p className="pt-5"><span className='font-rancho font-bold text-lg text-secondary tracking-[2px]'>Seller:</span> <span>{seller_name}</span></p>
+                            <p className="pb-3"><span>{seller_email}</span></p>
+                            <p className=""><span className='font-rancho font-bold text-lg text-secondary tracking-[2px]'>Price:</span> <span className='capitalize text-primary font-bold text-lg'>${price}</span></p>
+                            <p className=""><span className='font-rancho font-bold text-lg text-secondary tracking-[2px]'>Stock:</span> <span className='capitalize text-primary font-bold text-lg'>{quantity_available}</span></p>
+                            <div className='uppercase flex items-center gap-4'>
+                                <Rating
+                                    style={{ maxWidth: 130 }}
+                                    value={rating}
+                                    readOnly
+                                />
+                                <span className='capitalize text-primary font-bold text-lg'>{rating}</span>
+                            </div>
+                            <p className='py-3'>{description}</p>
                         </div>
                     </div>
                 </div>

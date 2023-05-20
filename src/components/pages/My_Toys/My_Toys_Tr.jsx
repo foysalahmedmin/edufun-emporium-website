@@ -1,3 +1,4 @@
+import { Rating } from '@mui/material';
 import React from 'react';
 import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -36,14 +37,14 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
     }
     return (
         <tr className='border-b-2 border-dotted border-primary'>
-            <th className='text-secondary'>
+            <th className='text-secondary text-center p-3'>
                 {index + 1}
             </th>
-            <td>
+            <td className='py-3'>
                 <div className="flex items-start space-x-3">
                     <div className="avatar">
-                        <div className="mask mask-squircle w-12 h-12">
-                            <img src={picture_url} alt="Avatar Tailwind CSS Component" />
+                        <div className="mask mask-squircle  w-20 h-20">
+                            <img className='h-full' src={picture_url} alt="Toy Image" />
                         </div>
                     </div>
                     <div>
@@ -53,17 +54,26 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
                             <p className=""><span className='font-rancho font-bold tracking-[2px]'>Price:</span> <span>${price}</span></p>
                             <p className=""><span className='font-rancho font-bold tracking-[2px]'>Stock:</span> <span>{quantity_available}</span></p>
                         </div>
-                        <p className=""><span className='font-rancho font-bold tracking-[2px]'>Rating:</span> <span>{rating}</span></p>
+                        <div className='uppercase flex items-center gap-4'>
+                            <Rating
+                                style={{ maxWidth: 130 }}
+                                value={rating}
+                                readOnly
+                            />
+                            <span className='capitalize text-primary font-bold text-lg'>{rating}</span>
+                        </div>
                     </div>
                 </div>
             </td>
-            <td className='text-left'>
+            <td className='py-3'>
                 {seller_name}
                 <br />
                 <span className="badge badge-ghost badge-md">{seller_email}</span>
             </td>
-            <td>{description.slice(0, 100)}</td>
-            <th >
+            <td className='max-w-[150px] py-3'>
+                <p className='shrink-0'>{description.slice(0, 100)}.....</p>
+            </td>
+            <th className='py-3' >
                 <div className='flex h-full items-center'>
                     <label onClick={() => setUpdateId(_id)} htmlFor="my-modal-5" className='shadow-md p-3 mx-1 text-primary'><FaRegEdit /></label>
                     <button onClick={() => deleteHandler(_id)} className='shadow-md p-3 mx-1 text-primary'><FaRegTrashAlt /></button>
