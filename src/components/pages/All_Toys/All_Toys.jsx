@@ -35,7 +35,7 @@ const All_Toys = () => {
                 </div>
                 <div className="overflow-x-auto pt-5">
                     <table className="table w-full">
-                        <thead className='bg-none'>
+                        <thead>
                             <tr className='font-rancho text-center text-secondary border-b-2 border-primary'>
                                 <th></th>
                                 <th>Seller Name</th>
