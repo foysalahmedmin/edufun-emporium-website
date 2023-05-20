@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
 const LogIn = () => {
     const [error, setError] = useState('')
@@ -16,6 +17,13 @@ const LogIn = () => {
         const password = form.password.value;
         logIn(email, password)
             .then(result => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'LogIn Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 navigate(from, { replace: true })
             })
             .catch((error) => {
@@ -28,6 +36,13 @@ const LogIn = () => {
     const googleLogInHandler = () => {
         logIn_with_google()
             .then(result => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'LogIn Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 navigate(from, { replace: true })
             })
             .catch((error) => {
@@ -39,6 +54,13 @@ const LogIn = () => {
     const githubLogInHandler = () => {
         logIn_with_gitHub()
             .then(result => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'LogIn Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 navigate(from, { replace: true })
             })
             .catch((error) => {

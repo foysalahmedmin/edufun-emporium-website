@@ -1,10 +1,15 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
+import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
 
 const Toy_Details = () => {
+    const navigation = useNavigation()
     const toyDetails = useLoaderData()
     const { name, seller_name, picture_url, price, quantity_available, rating, seller_email, sub_category, description } = toyDetails
-    console.log(toyDetails)
+
+    if (navigation.state === 'loading') {
+        return <LoadSpinner />
+    }
     return (
         <section className='pt-10'>
             <div className="container py-10">
