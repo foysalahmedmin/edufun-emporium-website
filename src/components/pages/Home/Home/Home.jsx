@@ -10,7 +10,6 @@ const Home = () => {
             <HomeBanner />
             <Gallery />
             <Shop />
-            <LoadSpinner />
         </>
     );
 };

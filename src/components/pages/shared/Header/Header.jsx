@@ -12,7 +12,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = (event) => {
             const topHeight = window.scrollY
-            if (topHeight > 80) {
+            if (topHeight > 70) {
                 setScrolled(true)
             } else {
                 setScrolled(false)
@@ -26,7 +26,7 @@ const Header = () => {
         };
     }, []);
     return (
-        <header className={`fixed top-0 w-full z-50 transition-[top] text-secondary ${scrolled ? 'md:top-0 bg-white' : 'md:top-5 bg-transparent'}`}>
+        <header className={`fixed top-0 w-full z-50 transition-[top] text-secondary ${scrolled ? 'md:top-0 bg-white shadow-xl' : 'md:top-5 bg-transparent'}`}>
             <div className="container">
                 <nav className='flex justify-between items-center py-2'>
                     {

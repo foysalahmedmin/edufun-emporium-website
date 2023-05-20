@@ -62,7 +62,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
                 <br />
                 <span className="badge badge-ghost badge-md">{seller_email}</span>
             </td>
-            <td>{description.slice(0, 250)}</td>
+            <td>{description.slice(0, 100)}</td>
             <th >
                 <div className='flex h-full items-center'>
                     <label onClick={() => setUpdateId(_id)} htmlFor="my-modal-5" className='shadow-md p-3 mx-1 text-primary'><FaRegEdit /></label>
