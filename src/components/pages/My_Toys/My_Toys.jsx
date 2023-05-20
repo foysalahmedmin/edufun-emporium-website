@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider';
 import My_Toys_Tr from './My_Toys_Tr';
 import Update_Toy from './Update_Toy';
+import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
 
 const My_Toys = () => {
     const { user } = useContext(AuthContext)
@@ -19,6 +20,11 @@ const My_Toys = () => {
                 })
         }
     }, [user, updated, sort])
+
+    if(!myToys){
+        return <LoadSpinner />
+    }
+
     return (
         <section className='py-20'>
             <div className="container py-10">
@@ -54,7 +60,7 @@ const My_Toys = () => {
                             </thead>
                             <tbody>
                                 {
-                                    myToys.map((toy, index) => <My_Toys_Tr key={toy._id} toy={toy} index={index} setUpdateId={setUpdateId} />)
+                                    myToys.map((toy, index) => <My_Toys_Tr key={toy._id} toy={toy} index={index} setUpdateId={setUpdateId} updated ={ updated } setUpdated = {setUpdated} />)
                                 }
                             </tbody>
                         </table>

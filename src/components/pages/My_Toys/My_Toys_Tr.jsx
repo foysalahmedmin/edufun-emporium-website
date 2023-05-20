@@ -3,7 +3,7 @@ import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const My_Toys_Tr = ({ toy, index, setUpdateId }) => {
+const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
     const { _id, name, seller_name, picture_url, price, quantity_available, rating, seller_email, sub_category, description } = toy
     const deleteHandler = (id) => {
         Swal.fire({
@@ -21,7 +21,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId }) => {
                 })
                     .then(res => res.json())
                     .then(result => {
-                        console.log(result)
+                        setUpdated(!updated)
                         if (0 < result.deletedCount) {
                             Swal.fire(
                                 'Deleted!',
