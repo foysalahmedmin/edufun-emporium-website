@@ -47,7 +47,7 @@ const My_Toys = () => {
                 <div>
                     <div className="overflow-x-auto w-full">
                         <table className="w-full">
-                            <thead>
+                            <thead className='bg-primary bg-opacity-30'>
                                 <tr className='font-rancho text-left text-secondary border-y-2 border-primary'>
                                     <th className='sticky left-0 z-10 py-3'>
                                     </th>

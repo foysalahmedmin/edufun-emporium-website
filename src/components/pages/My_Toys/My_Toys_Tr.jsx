@@ -60,7 +60,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
                                 value={rating}
                                 readOnly
                             />
-                            <span className='capitalize text-primary font-bold text-lg'>{rating}</span>
+                            <span className='capitalize text-primary font-bold'>{rating}</span>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
                 <span className="badge badge-ghost badge-md">{seller_email}</span>
             </td>
             <td className='max-w-[150px] py-3'>
-                <p className='shrink-0'>{description.slice(0, 100)}.....</p>
+                <p className='shrink-0'>{description.slice(0, 100)}.</p>
             </td>
             <th className='py-3' >
                 <div className='flex h-full items-center'>

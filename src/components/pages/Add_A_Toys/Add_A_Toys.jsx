@@ -13,9 +13,9 @@ const Add_A_Toys = () => {
         const seller_name = form.seller_name.value ;
         const seller_email = form.seller_email.value ;
         const sub_category = form.sub_category.value ;
-        const price = form.price.value ;
-        const rating = form.rating.value ;
-        const quantity_available = form.quantity_available.value ;
+        const price = +form.price.value ;
+        const rating = +form.rating.value ;
+        const quantity_available = +form.quantity_available.value ;
         const description = form.description.value ;
         const toy = {
             name,

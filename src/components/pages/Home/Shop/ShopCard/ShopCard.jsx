@@ -23,11 +23,11 @@ const ShopCard = ({ toy }) => {
                 confirmButtonText: 'Yes, LogIn'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate(`/toy/${_id}`, { replace: true })
+                    navigate(`/toy/${_id}`)
                 }
             })
         } else {
-            navigate(`/toy/${_id}`, { replace: true })
+            navigate(`/toy/${_id}`)
         }
     }
     return (

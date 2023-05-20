@@ -22,11 +22,11 @@ const All_Toys_Tr = ({toy, index}) => {
                 confirmButtonText: 'Yes, LogIn'
               }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate(`/toy/${_id}`, { replace: true })
+                    navigate(`/toy/${_id}`)
                 }
               })
         }else{
-            navigate(`/toy/${_id}`, { replace: true })
+            navigate(`/toy/${_id}`)
         }
     }
     return (

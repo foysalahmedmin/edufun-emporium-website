@@ -20,8 +20,8 @@ const Update_Toy = ({ updateId, updated, setUpdated }) => {
     const updateToyHandler = (event) => {
         event.preventDefault()
         const form = event.target;
-        const price = form.price.value;
-        const quantity_available = form.quantity_available.value;
+        const price = +form.price.value;
+        const quantity_available = +form.quantity_available.value;
         const description = form.description.value;
         const toy = {
             price,
