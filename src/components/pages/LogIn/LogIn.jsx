@@ -3,8 +3,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import useTitle from '../../../custom_hooks/useTitle';
 
 const LogIn = () => {
+    useTitle('Log-In')
     const [error, setError] = useState('')
     const navigate = useNavigate()
     const location = useLocation()

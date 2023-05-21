@@ -18,7 +18,7 @@ const Shop = () => {
     }, [category])
     return (
         <section className='py-10'>
-            <div className="container">
+            <div className="container" data-aos="fade-up">
                 <div className='py-5 mb-10'>
                     <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>Shop By Category</h1>
                     <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>

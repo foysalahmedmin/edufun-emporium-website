@@ -31,7 +31,7 @@ const ShopCard = ({ toy }) => {
         }
     }
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className="card w-full bg-base-100 shadow-xl">
                 <figure><img className='w-full h-60 object-cover' src={picture_url} alt="Toy" /></figure>
                 <div className="card-body">

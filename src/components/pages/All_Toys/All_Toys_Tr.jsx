@@ -30,7 +30,7 @@ const All_Toys_Tr = ({toy, index}) => {
         }
     }
     return (
-        <tr className='text-center border-b-2 border-dotted border-primary'>
+        <tr className='text-center border-b-2 border-dotted border-primary' data-aos="fade-up">
             <th className='text-secondary'>{index + 1}</th>
             <td>{seller_name}</td>
             <td>{name}</td>

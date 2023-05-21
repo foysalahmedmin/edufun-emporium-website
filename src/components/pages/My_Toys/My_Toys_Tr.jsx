@@ -36,7 +36,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
         })
     }
     return (
-        <tr className='border-b-2 border-dotted border-primary'>
+        <tr className='border-b-2 border-dotted border-primary' data-aos="fade-up">
             <th className='text-secondary text-center p-3'>
                 {index + 1}
             </th>

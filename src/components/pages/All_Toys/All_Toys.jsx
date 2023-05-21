@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import { BiSearchAlt } from "react-icons/bi";
 import All_Toys_Tr from './All_Toys_Tr';
 import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
+import useTitle from '../../../custom_hooks/useTitle';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const All_Toys = () => {
+    useTitle('All Toys')
+    useEffect(()=>{
+        AOS.init()
+    }, [])
     const navigation = useNavigation()
     const loadAllToys = useLoaderData()
     const [allToys, setAllToys] = useState(loadAllToys)

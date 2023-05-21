@@ -6,7 +6,6 @@ import { AuthContext } from '../providers/AuthProvider';
 const PrivateRout = ({children}) => {
     const {user, loading} = useContext(AuthContext)
     const location = useLocation()
-    console.log(user, loading);
     if(loading){
         return <LoadSpinner />
     }

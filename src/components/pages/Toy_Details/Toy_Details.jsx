@@ -2,8 +2,10 @@ import React from 'react';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
 import { Rating } from '@mui/material';
+import useTitle from '../../../custom_hooks/useTitle';
 
 const Toy_Details = () => {
+    useTitle('Toy Details')
     const navigation = useNavigation()
     const toyDetails = useLoaderData()
     const { name, seller_name, picture_url, price, quantity_available, rating, seller_email, sub_category, description } = toyDetails

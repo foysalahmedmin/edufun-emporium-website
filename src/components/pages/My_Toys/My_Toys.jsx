@@ -3,8 +3,15 @@ import { AuthContext } from '../../../providers/AuthProvider';
 import My_Toys_Tr from './My_Toys_Tr';
 import Update_Toy from './Update_Toy';
 import LoadSpinner from '../shared/LoadSpinner/LoadSpinner';
+import useTitle from '../../../custom_hooks/useTitle';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const My_Toys = () => {
+    useTitle('My Toys')
+    useEffect(()=>{
+        AOS.init()
+    }, [])
     const { user } = useContext(AuthContext)
     const [myToys, setMayToys] = useState([])
     const [updateId, setUpdateId] = useState('')
