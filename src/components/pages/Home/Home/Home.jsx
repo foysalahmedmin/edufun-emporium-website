@@ -5,6 +5,8 @@ import Shop from '../Shop/Shop';
 import useTitle from '../../../../custom_hooks/useTitle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Reviews from '../Reviews/Reviews';
+import Sponsors from '../Sponsors/Sponsors';
 
 const Home = () => {
     useTitle('Home')
@@ -16,6 +18,8 @@ const Home = () => {
             <HomeBanner />
             <Gallery />
             <Shop />
+            <Reviews />
+            <Sponsors />
         </>
     );
 };

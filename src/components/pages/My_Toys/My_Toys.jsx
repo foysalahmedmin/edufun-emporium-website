@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 
 const My_Toys = () => {
     useTitle('My Toys')
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init()
     }, [])
     const { user } = useContext(AuthContext)
@@ -20,7 +20,7 @@ const My_Toys = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/myToys?email=${user?.email}&&sort=${sort}`)
+            fetch(`https://edu-fun-emporium-server.vercel.app/myToys?email=${user?.email}&&sort=${sort}`)
                 .then(res => res.json())
                 .then(data => {
                     setMayToys(data);
@@ -28,15 +28,18 @@ const My_Toys = () => {
         }
     }, [user, updated, sort])
 
-    if(!myToys){
+    if (!myToys) {
         return <LoadSpinner />
     }
 
     return (
         <section className='py-20'>
             <div className="container py-10">
-                <div className='py-5'>
-                    <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>{user?.displayName || 'My'} Toys</h1>
+                <div className='py-5 text-center'>
+                    <h1 className='uppercase text-3xl font-black font-rancho text-animation'>{user?.displayName || 'My'} Toys</h1>
+                    <p className='mb-3'>
+                        Journey of Knowledge and Fun: Enlightening Young Minds with an Extensive Array of Educational Toys, <br /> Engaging Games, and Interactive Learning Resources at the Sparkling Stars Academy.
+                    </p>
                     <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
                     <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
                 </div>
@@ -66,7 +69,7 @@ const My_Toys = () => {
                             </thead>
                             <tbody>
                                 {
-                                    myToys.map((toy, index) => <My_Toys_Tr key={toy._id} toy={toy} index={index} setUpdateId={setUpdateId} updated ={ updated } setUpdated = {setUpdated} />)
+                                    myToys.map((toy, index) => <My_Toys_Tr key={toy._id} toy={toy} index={index} setUpdateId={setUpdateId} updated={updated} setUpdated={setUpdated} />)
                                 }
                             </tbody>
                         </table>

@@ -31,7 +31,7 @@ const Add_A_Toys = () => {
             description
         }
         console.log(toy)
-        fetch('http://localhost:5000/toys',{
+        fetch('https://edu-fun-emporium-server.vercel.app/toys',{
             method : 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(toy)
@@ -52,8 +52,8 @@ const Add_A_Toys = () => {
         })
     }
     return (
-        <section className='min-h-screen'>
-            <div className="pt-[5rem] container py-10 min-h-screen flex justify-center lg:flex-row gap-5 items-center">
+        <section className='py-20'>
+            <div className="container py-10 flex justify-center lg:flex-row gap-5 items-center">
                 <div className='w-full overflow-hidden'>
                     <div className='py-5'>
                         <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>Add Toy</h1>

@@ -16,8 +16,11 @@ const Toy_Details = () => {
     return (
         <section className='pt-10'>
             <div className="container py-10">
-                <div className='py-5'>
-                    <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>Register</h1>
+                <div className='py-5 text-center'>
+                    <h1 className='uppercase text-3xl font-black font-rancho text-animation'>{name} Details</h1>
+                    <p className='mb-3'>
+                        Journey of Knowledge and Fun: Enlightening Young Minds with an Extensive Array of Educational Toys, <br /> Engaging Games, and Interactive Learning Resources at the Sparkling Stars Academy.
+                    </p>
                     <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
                     <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
                 </div>

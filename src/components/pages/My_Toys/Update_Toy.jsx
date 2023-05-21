@@ -9,7 +9,7 @@ const Update_Toy = ({ updateId, updated, setUpdated }) => {
 
     useEffect(() => {
         if (updateId) {
-            fetch(`http://localhost:5000/toy/${updateId}`)
+            fetch(`https://edu-fun-emporium-server.vercel.app/toy/${updateId}`)
                 .then(res => res.json())
                 .then(data => {
                     setToyInfo(data);
@@ -29,7 +29,7 @@ const Update_Toy = ({ updateId, updated, setUpdated }) => {
             description
         }
         console.log(toy)
-        fetch(`http://localhost:5000/toyUpdate/${updateId}`, {
+        fetch(`https://edu-fun-emporium-server.vercel.app/toyUpdate/${updateId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(toy)

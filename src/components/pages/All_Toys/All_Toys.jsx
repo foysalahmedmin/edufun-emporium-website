@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 
 const All_Toys = () => {
     useTitle('All Toys')
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init()
     }, [])
     const navigation = useNavigation()
@@ -17,19 +17,22 @@ const All_Toys = () => {
     const [allToys, setAllToys] = useState(loadAllToys)
     const [searchText, setSearchText] = useState('')
     const searchHandler = () => {
-        fetch(`http://localhost:5000/toysSearch/${searchText}`)
+        fetch(`https://edu-fun-emporium-server.vercel.app/toysSearch/${searchText}`)
             .then(res => res.json())
             .then(data => setAllToys(data))
     }
-    
+
     if (navigation.state === 'loading') {
         return <LoadSpinner />
     }
     return (
         <section className='py-20'>
             <div className="container py-10">
-                <div className='py-5'>
-                    <h1 className='text-center uppercase text-3xl mb-2 font-black font-rancho text-animation'>All Toys</h1>
+                <div className='py-5 text-center'>
+                    <h1 className='uppercase text-3xl font-black font-rancho text-animation'>Our Sponsors</h1>
+                    <p className='mb-3'>
+                        Journey of Knowledge and Fun: Enlightening Young Minds with an Extensive Array of Educational Toys, <br /> Engaging Games, and Interactive Learning Resources at the Sparkling Stars Academy.
+                    </p>
                     <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
                     <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
                 </div>
@@ -37,7 +40,7 @@ const All_Toys = () => {
                     <div className='max-w-xl ml-auto flex border-b-2 border-primary border-dotted rounded-lg overflow-hidden'>
                         <label htmlFor="search"></label>
                         <input onChange={(event) => setSearchText(event.target.value)} className='w-full px-5 py-1' type="text" name="search" id="search" placeholder='Search...' />
-                        <button onClick={searchHandler} className='btn btn-ghost'><BiSearchAlt className='text-primary font-black text-2xl' /></button> 
+                        <button onClick={searchHandler} className='btn btn-ghost'><BiSearchAlt className='text-primary font-black text-2xl' /></button>
                     </div>
                 </div>
                 <div className="overflow-x-auto pt-5">

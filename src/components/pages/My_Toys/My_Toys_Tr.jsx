@@ -17,7 +17,7 @@ const My_Toys_Tr = ({ toy, index, setUpdateId, updated, setUpdated }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/myToys/${id}`, {
+                fetch(`https://edu-fun-emporium-server.vercel.app/myToys/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
