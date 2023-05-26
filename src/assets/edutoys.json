@@ -1,0 +1,178 @@
+[
+    {
+        "picture_url": "https://example.com/toy1.jpg",
+        "name": "Counting Caterpillar",
+        "seller_name": "John's Toys",
+        "seller_email": "john@example.com",
+        "sub_category": "Math Toys",
+        "price": 29.99,
+        "rating": 4.5,
+        "quantity_available": 10,
+        "description": "The Counting Caterpillar is an educational math toy designed to help children learn basic arithmetic through interactive gameplay. It includes various math challenges and puzzles to engage and develop their problem-solving skills."
+    },
+    {
+        "picture_url": "https://example.com/toy2.jpg",
+        "name": "Language Learner Robot",
+        "seller_name": "Educational Express",
+        "seller_email": "info@eduexpress.com",
+        "sub_category": "Language Toys",
+        "price": 19.99,
+        "rating": 4.2,
+        "quantity_available": 5,
+        "description": "The Language Learner Robot is a language learning toy that introduces children to different languages through fun activities. It includes interactive games, flashcards, and audio lessons to improve vocabulary and pronunciation."
+    },
+    {
+        "picture_url": "https://example.com/toy3.jpg",
+        "name": "Science Explorer Kit",
+        "seller_name": "SciFun Store",
+        "seller_email": "sales@scifunstore.com",
+        "sub_category": "Science Toys",
+        "price": 39.99,
+        "rating": 4.8,
+        "quantity_available": 3,
+        "description": "The Science Explorer Kit is a science experiment kit that enables kids to explore various scientific concepts through hands-on experiments. It includes a guidebook, laboratory equipment, and materials for conducting exciting science projects."
+    },
+    {
+        "picture_url": "https://example.com/toy4.jpg",
+        "name": "Alphabet Train Puzzle",
+        "seller_name": "Fun Learning Toys",
+        "seller_email": "info@funlearningtoys.com",
+        "sub_category": "Language Toys",
+        "price": 14.99,
+        "rating": 4.0,
+        "quantity_available": 8,
+        "description": "The Alphabet Train Puzzle is a fun and educational toy that helps children learn the alphabet. It features a colorful train with detachable letter blocks, allowing kids to practice letter recognition and spelling while having fun."
+    },
+    {
+        "picture_url": "https://example.com/toy5.jpg",
+        "name": "Build Your Own Solar System",
+        "seller_name": "Stellar Science",
+        "seller_email": "info@stellarscience.com",
+        "sub_category": "Science Toys",
+        "price": 24.99,
+        "rating": 4.7,
+        "quantity_available": 12,
+        "description": "Build Your Own Solar System is an educational toy that lets children create their own miniature solar system model. It includes planets, a sun, and informational cards to learn about the solar system and planetary characteristics."
+    },
+    {
+        "picture_url": "https://example.com/toy6.jpg",
+        "name": "Math Magic Cube",
+        "seller_name": "Smart Kids Toys",
+        "seller_email": "sales@smartkidstoys.com",
+        "sub_category": "Math Toys",
+        "price": 12.99,
+        "rating": 4.3,
+        "quantity_available": 15,
+        "description": "The Math Magic Cube is a puzzle toy that combines math and logic. It features number blocks with arithmetic operations, and the goal is to arrange the blocks in a way that satisfies specific mathematical equations, promoting critical thinking and problem-solving skills."
+    },
+    {
+        "picture_url": "https://example.com/toy7.jpg",
+        "name": "Word Builder Board",
+        "seller_name": "Learning Land",
+        "seller_email": "info@learningland.com",
+        "sub_category": "Language Toys",
+        "price": 17.99,
+        "rating": 4.4,
+        "quantity_available": 6,
+        "description": "The Word Builder Board is a language toy that helps children learn spelling and expand their vocabulary. It features letter tiles and a board where kids can form words, encouraging literacy skills and word recognition."
+    },
+    {
+        "picture_url": "https://example.com/toy8.jpg",
+        "name": "Microscope Discovery Set",
+        "seller_name": "Science Explorers",
+        "seller_email": "sales@scienceexplorers.com",
+        "sub_category": "Science Toys",
+        "price": 49.99,
+        "rating": 4.9,
+        "quantity_available": 2,
+        "description": "The Microscope Discovery Set allows young scientists to explore the microscopic world. It includes a beginner's microscope, prepared slides, and tools for observing various specimens, fostering curiosity and scientific inquiry."
+    },
+    {
+        "picture_url": "https://example.com/toy9.jpg",
+        "name": "Geography Puzzle Globe",
+        "seller_name": "Global Explorers",
+        "seller_email": "info@globalexplorers.com",
+        "sub_category": "Social Studies Toys",
+        "price": 34.99,
+        "rating": 4.6,
+        "quantity_available": 7,
+        "description": "The Geography Puzzle Globe is an interactive toy that helps children learn about the world's continents, countries, and landmarks. It features puzzle pieces representing different regions, enhancing geographical knowledge and spatial awareness."
+    },
+    {
+        "picture_url": "https://example.com/toy10.jpg",
+        "name": "Coding Robot Kit",
+        "seller_name": "TechWhiz",
+        "seller_email": "info@techwhiz.com",
+        "sub_category": "Technology Toys",
+        "price": 59.99,
+        "rating": 4.7,
+        "quantity_available": 4,
+        "description": "The Coding Robot Kit introduces kids to programming concepts through hands-on building and coding activities. It includes a programmable robot, coding blocks, and a software interface to create and execute fun robotic movements."
+    },
+    {
+        "picture_url": "https://example.com/toy11.jpg",
+        "name": "Fraction Pizza Set",
+        "seller_name": "Math Masters",
+        "seller_email": "sales@mathmasters.com",
+        "sub_category": "Math Toys",
+        "price": 19.99,
+        "rating": 4.2,
+        "quantity_available": 9,
+        "description": "The Fraction Pizza Set is a math toy that teaches fractions in a delicious way. It includes pizza slices divided into fractions, allowing children to visually understand and manipulate fractions while playing and pretending to serve pizza."
+    },
+    {
+        "picture_url": "https://example.com/toy12.jpg",
+        "name": "Chemistry Lab Set",
+        "seller_name": "ScienceLab Supplies",
+        "seller_email": "info@sciencelabsupplies.com",
+        "sub_category": "Science Toys",
+        "price": 69.99,
+        "rating": 4.8,
+        "quantity_available": 5,
+        "description": "The Chemistry Lab Set is a comprehensive science kit that introduces children to the exciting world of chemistry. It includes various chemicals, test tubes, and lab equipment for conducting safe and engaging chemistry experiments, fostering a love for scientific exploration."
+    },
+    {
+        "picture_url": "https://example.com/toy13.jpg",
+        "name": "Solar-Powered Robot",
+        "seller_name": "EcoToys",
+        "seller_email": "sales@ecotoys.com",
+        "sub_category": "Technology Toys",
+        "price": 39.99,
+        "rating": 4.5,
+        "quantity_available": 6,
+        "description": "The Solar-Powered Robot is an eco-friendly toy that runs on solar energy. Kids can assemble the robot using provided parts and watch it come to life as it harnesses the power of the sun, promoting environmental awareness and STEM learning."
+    },
+    {
+        "picture_url": "https://example.com/toy14.jpg",
+        "name": "World Map Jigsaw Puzzle",
+        "seller_name": "Puzzle Masters",
+        "seller_email": "info@puzzlemasters.com",
+        "sub_category": "Social Studies Toys",
+        "price": 24.99,
+        "rating": 4.3,
+        "quantity_available": 8,
+        "description": "The World Map Jigsaw Puzzle is an educational puzzle that helps children develop their knowledge of geography. It features a detailed map of the world, challenging kids to piece together continents, countries, and oceans while learning about different places."
+    },
+    {
+        "picture_url": "https://example.com/toy15.jpg",
+        "name": "Building Blocks Set",
+        "seller_name": "Creative Play",
+        "seller_email": "info@creativeplay.com",
+        "sub_category": "Technology Toys",
+        "price": 39.99,
+        "rating": 4.7,
+        "quantity_available": 10,
+        "description": "The Building Blocks Set is a versatile construction toy that sparks creativity and spatial skills. It includes various blocks in different shapes and sizes, allowing kids to build imaginative structures and develop fine motor skills."
+    },
+    {
+        "picture_url": "https://example.com/toy16.jpg",
+        "name": "Magnetic Alphabet Letters",
+        "seller_name": "ABC Learning",
+        "seller_email": "info@abclearning.com",
+        "sub_category": "Language Toys",
+        "price": 12.99,
+        "rating": 4.1,
+        "quantity_available": 15,
+        "description": "The Magnetic Alphabet Letters set is a fun and educational toy for learning letters and spelling. The set includes magnetic letters that can be arranged on a magnetic board or any metal surface, providing a hands-on way to explore language and literacy."
+    }
+]
