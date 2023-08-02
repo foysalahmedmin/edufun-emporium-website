@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import Gallery from '../Gallery/Gallery';
-import Shop from '../Shop/Shop';
+import Shop from '../Shop/Shop/Shop';
 import useTitle from '../../../../custom_hooks/useTitle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

@@ -27,7 +27,7 @@ const HomeBanner = () => {
 
             <div className="carousel w-full">
                 <div style={{ ...bannerPosition, ...banner_1 }} id="slide1" className="carousel-item relative w-full h-screen">
-                    <div className="container relative">
+                    <div className="container overflow-hidden relative">
                         <div className='h-full flex justify-start items-center' data-aos="zoom-out-left">
                             <div className='max-w-lg text-white'>
                                 <h1 className='text-4xl text-animation font-black mb-5'>Unlock the Power of Learning with Educational Toys</h1>

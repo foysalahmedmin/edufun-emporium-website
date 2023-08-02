@@ -43,21 +43,23 @@ const Reviews = () => {
     };
     return (
         <section className='py-10'>
-            <div className="container" data-aos="fade-up">
-                <div className='py-5 text-center'>
-                    <h1 className='uppercase text-3xl font-black font-rancho text-animation'>Customer Reviews</h1>
-                    <p className='mb-3'>
-                        Journey of Knowledge and Fun: Enlightening Young Minds with an Extensive Array of Educational Toys, <br /> Engaging Games, and Interactive Learning Resources at the Sparkling Stars Academy.
-                    </p>
-                    <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
-                    <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
-                </div>
-                <div>
-                    <Slider {...settings}>
-                        {
-                            reviews.map(review => <Review_card review_data={review} key={review._id}></Review_card>)
-                        }
-                    </Slider>
+            <div className="container overflow-hidden">
+                <div data-aos="fade-up">
+                    <div className='py-5 text-center'>
+                        <h1 className='uppercase text-3xl font-black font-rancho text-animation'>Customer Reviews</h1>
+                        <p className='mb-3'>
+                            Journey of Knowledge and Fun: Enlightening Young Minds with an Extensive Array of Educational Toys, <br /> Engaging Games, and Interactive Learning Resources at the Sparkling Stars Academy.
+                        </p>
+                        <p className='bg-primary border-dotted border-b-4 w-40 mx-auto mb-2'></p>
+                        <p className='bg-secondary h-[2px] w-24 mx-auto'></p>
+                    </div>
+                    <div>
+                        <Slider {...settings}>
+                            {
+                                reviews.map(review => <Review_card review_data={review} key={review._id}></Review_card>)
+                            }
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </section>
